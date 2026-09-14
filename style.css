@@ -324,4 +324,16 @@ body{
         width: fit-content;
     }
 } 
+/* Paste this at the absolute bottom of style.css */
+.button-sweeten {
+    touch-action: manipulation !important;
+    cursor: pointer;
+}
+
+/* This forces your popup container to appear on top of everything on phone screens */
+.popup-menu, #popup, .modal { 
+    z-index: 99999 !important; 
+    position: fixed !important;
+}
+
 

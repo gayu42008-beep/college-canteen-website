@@ -1,7 +1,11 @@
 let basket = [];
 
-    function addProduct(e, name, price, imageSrc) {
-      if(e) e.preventDefault();
+    // function addProduct(e, name, price, imageSrc) {
+      // if(e) e.preventDefault();
+      
+    function addProduct(event, name, price, imageSrc) {
+    // Paste these two lines right at the very top of your function:
+    if (event) event.preventDefault();
       basket.push({ name: name, price: price, image: imageSrc });
       updatePopupView();
     }
@@ -74,3 +78,7 @@ let basket = [];
         
         // Let the default HTML anchor click handle the tab transition organically
     }
+
+    
+    // ... rest of your existing popup code stays here ...
+
