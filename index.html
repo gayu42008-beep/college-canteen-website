@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMPUS CRAVES</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="java.js" defer></script>
+    
+    <style>
+      @media screen {
+        header{
+          flex-wrap: wrap;
+        }
+        .product-container{
+          flex-wrap: wrap;
+        }
+        img{
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1 style="font-family:cursive;position: relative;left: 10px;top: 18px;">CAMPUS CRAVES</h1>
+
+          <nav>  <a href="#home" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Home</a> </nav>
+          <nav>  <a href="#menu" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Menu</a> </nav>
+           <nav> <a href="#about" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About us</a> </nav>
+           <nav> <a href="#location" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;position: relative;left: -34px;">location</a> </nav>
+        
+    </header>
+    
+
+     <img src="bg.jpg" height="250px" width="100%" style="opacity: 0.7;"> 
+    <div id="home">
+       <span> <h2 style="text-decoration: dotted;text-align: center;position: relative;top: 40px;">COLLAGE CANTEEN</h2>
+        <br>
+        <h3 style="font-family: cursive;text-align: center;position: relative;top: 60px;background-color: whitesmoke;color: black;">Good Bite !  Good delight !!</h3></span>
+    </div>
+    <br><br>
+
+    <div id="menu">
+    <h1 style="font-family: monospace;position: relative;top: 10px;text-align: center;letter-spacing: 2px;">🍽️ MENU</h1>
+    <br>
+    <h4>🥗 Tiffen</h4>
+    <br>
+    <div class="products-container">
+    <div class="product-card">
+      <img src="idli.webp" alt="Idliy">
+      <h3>Idliy</h3>
+      <p>Rs 30</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Idliy', 30, 'idli.webp')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="dosa.jpg" alt="Cooking Oil">
+      <h3>Dosa</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Dosa', 35, 'dosa.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="pongal.webp" alt="Cooking Oil">
+      <h3>Pongal</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Pongal', 35, 'pongal.webp')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="idiya.jpg" alt="Cooking Oil">
+      <h3>Idiyapam</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Idiyapam', 35, 'idiya.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="pori.jpg" alt="Cooking Oil">
+      <h3>Pori</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Pori', 35, 'pori.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="appam.webp" alt="Cooking Oil">
+      <h3>Appam</h3>
+      <p>Rs 30</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Appam', 30, 'appam.jpg')">Add Product</button>
+    </div>
+
+    </div>
+
+    <br>
+
+    <h4>🍱 Lunch</h4>
+    
+
+    <div class="products-container">
+    <div class="product-card">
+      <img src="bri.jpg" alt="Idliy">
+      <h3>Chicken Biryani</h3>
+      <p>Rs 100</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Biryani', 100, 'bri.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="friedveg.jpg" alt="Cooking Oil">
+      <h3>Veg FriedRice</h3>
+      <p>Rs 80</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Veg FriedRice', 80, 'friedveg.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="chicken.jpg" alt="Cooking Oil">
+      <h3>Chicken FriedRice</h3>
+      <p>Rs 100</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Chicken FriedRice', 100, 'chicken.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="noodles.jpg" alt="Cooking Oil">
+      <h3>Veg Noodles</h3>
+      <p>Rs 80</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Veg Noodles', 80, 'noodles.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="sambar.jpeg" alt="Cooking Oil">
+      <h3>Sambar Rice</h3>
+      <p>Rs 45</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Sambar Rice', 45, 'sambar.jpeg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="curd.jpg" alt="Curd Rice">
+      <h3>Curd Rice</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Curd Rice', 35, 'curd.jpg')">Add Product</button>
+    </div>
+
+    </div>
+
+    <br><br>
+
+    <h4>🥤 Drinks</h4>
+    <br>
+
+    <div class="products-container">
+    <div class="product-card">
+      <img src="cofee.jpg" alt="Idliy">
+      <h3>Filter Cofee</h3>
+      <p>Rs 20</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Fliter Cofee', 20, 'cofee.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="tea.jpg" alt="Cooking Oil">
+      <h3>Ginger Tea</h3>
+      <p>Rs 15</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Ginger Tea', 15, 'tea.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="lemon.jpg" alt="Cooking Oil">
+      <h3>Lemon Juice</h3>
+      <p>Rs 30</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Lemon Juice', 30, 'lemon.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="apple.jpg" alt="Cooking Oil">
+      <h3>Apple Juice</h3>
+      <p>Rs 50</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Apple Juice', 50, 'apple.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="rose.JPG" alt="Cooking Oil">
+      <h3>Rose Milk</h3>
+      <p>Rs 45</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Rice Milk', 45, 'rose.JPG')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="falooda.webp" alt="Curd Rice">
+      <h3>Special Falooda</h3>
+      <p>Rs 65</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Special Falooda', 65, 'falooda.jpg')">Add Product</button>
+    </div>
+
+    </div>
+
+    <br>
+
+    <div class="products-container">
+    <div class="product-card">
+      <img src="sev.jpg" alt="Idliy">
+      <h3>Cooling 7up</h3>
+      <p>Rs 20</p>
+      <button class="button-sweeten" onclick="addProduct(event, '7up', 20, 'sev.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="orange.jpg" alt="Cooking Oil">
+      <h3>Orange Juice</h3>
+      <p>Rs 45</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Orange Juice', 45, 'orange.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="pomer.jpg" alt="Cooking Oil">
+      <h3>Promergate Juice</h3>
+      <p>Rs 70</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Promergate Juice', 70, 'pomer.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="vanila.jpg" alt="Cooking Oil">
+      <h3>Vanila Milkshake</h3>
+      <p>Rs 70</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Vanila Milkshake', 70, 'vanila.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="choco.jpg" alt="Cooking Oil">
+      <h3>Chocolate Milkshake</h3>
+      <p>Rs 70</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Chocolate Milkshake', 70, 'choco.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="water.jpg" alt="Curd Rice">
+      <h3>Watermelon Juice</h3>
+      <p>Rs 30</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Watermelon Juice', 30, 'water.jpg')">Add Product</button>
+    </div>
+
+    </div>
+    <br>
+
+    <h4>🍟 Snacks</h4>
+    
+    <div class="products-container">
+    <div class="product-card">
+      <img src="cutlet.jpg" alt="Idliy">
+      <h3>Cutlet</h3>
+      <p>Rs 10</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Cutlet', 10, 'cutlet.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="vegpuf.jpg" alt="Cooking Oil">
+      <h3>Veg Puff</h3>
+      <p>Rs 15</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Veg Puff', 15, 'vegpuf.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="eggpuf.jpg" alt="Cooking Oil">
+      <h3>Egg Puff</h3>
+      <p>Rs 15</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'eggpuf', 15, 'eggpuf.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="vegroll.jpg" alt="Cooking Oil">
+      <h3>Veg Roll</h3>
+      <p>Rs 15</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Veg Roll', 15, 'vegroll.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="vegsand.jpg" alt="Cooking Oil">
+      <h3>Sandwich</h3>
+      <p>Rs 40</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Sandwich', 40, 'vegsand.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="samosa.jpg" alt="Curd Rice">
+      <h3>samosa</h3>
+      <p>Rs 8</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Samosa', 8, 'samosa.jpg')">Add Product</button>
+    </div>
+
+    </div>
+
+    <br>
+
+    <div class="products-container">
+    <div class="product-card">
+      <img src="onion.jpg" alt="Idliy">
+      <h3>Onion Ring</h3>
+      <p>Rs 25</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Onion Ring', 25, 'onion.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="chicroll.jpg" alt="Cooking Oil">
+      <h3>Chicken Roll</h3>
+      <p>Rs 15</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Chicken Roll', 15, 'chicroll.jpg')">Add Product</button>
+    </div>
+  
+
+    <div class="product-card">
+      <img src="french.jpg" alt="Cooking Oil">
+      <h3>French Fries</h3>
+      <p>Rs 25</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'French Fries', 25, 'french.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="burger.jpg" alt="Cooking Oil">
+      <h3>Chicken Burger</h3>
+      <p>Rs 40</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Chicken Burger', 40, 'burger.jpg')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="bred.webp" alt="Cooking Oil">
+      <h3>Bread Ombelete</h3>
+      <p>Rs 35</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Bread Ombelete', 35, 'bred.webp')">Add Product</button>
+    </div>
+
+    <div class="product-card">
+      <img src="cheess.jpg" alt="Curd Rice">
+      <h3>Cheese Balls</h3>
+      <p>Rs 30</p>
+      <button class="button-sweeten" onclick="addProduct(event, 'Cheese Balls', 30, 'cheess.jpg')">Add Product</button>
+    </div>
+
+    </div>
+
+    </div>
+
+<br><br>
+
+    <div id="about">
+      <h4>📖 About Us</h4>
+      <br>
+      <p style="width: 50%;font-style: italic;position: relative;left: 60px;">A canteen is an important place in a school or college. It is a place where students and teachers can buy food and drinks. Students usually visit the canteen during breaks and lunch time. They can enjoy different types of snacks, meals, and beverages. The canteen is also a place where students can relax and spend time with their friends. It helps students feel fresh and happy after attending classes. A clean and hygienic canteen provides healthy and tasty food to everyone. Students can also share their food and talk about their daily activities. The canteen creates a friendly and enjoyable atmosphere in the college. It is often one of the favourite places for students on campus. Thus, the canteen is not only a
+         place for eating but also a place for friendship, relaxation, and creating happy memories.The canteen also teaches students to share and care for others. It brings students from different classes together and helps them make new friends. A good canteen should always maintain cleanliness and serve fresh food. Students should also keep the canteen clean after eating. Therefore, 
+         the canteen plays an important role in making college life enjoyable and memorable.</p>
+      <img src="about.webp" height="320px" width="450px" style="position: absolute;top: 440%;left: 60%;" >
+    </div>
+
+
+    <br><br>
+
+
+    <div id="location">
+      <h4>🚩 location</h4>
+      <br><span id="loco">
+      <p style="position: relative;left: 180px;">📌 Sperate Building,</p>
+      <p style="position: relative;left: 180px;">   opposite to Mech block,</p>
+       <p style="position: relative;left: 180px;">  near Libary.</p></span>
+      
+      <img src="canteen.png" height="180px" width="280px" style="position: absolute;top: 510%;left: 50%;">
+      <br>
+    </div>
+
+    <br><br> 
+
+    <footer>
+      <span id="foot">
+        <h5 style="position: relative;top: 150px;left: -80px;">🔗 Quick Links</h5>
+        <br>
+        <a href="#home" id="li">🏠 Home</a>
+        <br>
+        <a href="#menu" id="li">📜 Menu</a>
+        <br>
+        <a href="#about" id="li">ℹ️ About Us</a>
+        <br>
+        <a href="#location" id="li">📍 Location</a>
+      </span>
+
+      <span id="con">
+        <h5>☎️ Contact Us</h5>
+        <br>
+        <p>91 9876347867</p>
+        <p>0897 4598</p>
+        <br><br>
+        <h5>📌 Location</h5>
+        <br>
+        <p>Vanarapettai</p>
+        <p>Tirunelveli</p>
+      </span>
+
+      <span id="other">
+       <h5> Our other platform</h5>
+       <br><span class="icon">
+       <svg xmlns="http://w3.org" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+       <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 0.013-3.583 0.07-4.849 0.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259 0.014 3.668 0.072 4.948 0.2 4.358 2.618 6.78 6.98 6.98 1.281 0.058 1.689 0.072 4.948 0.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98 0.059-1.28 0.073-1.689 0.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.065-1.441 1.44s.065 1.44 1.441 1.44c.795 0 1.439-.065 1.439-1.44s-.064-1.44-1.439-1.44z"/>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+       <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+       </svg>
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 h6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </svg></span>
+        <img src="qoute.jpg" height="200px" width="150px" style="position: absolute;top: 200%;left: 10%;" >
+      </span>
+
+    </footer>
+
+
+
+    <div id="myCartPopup" class="cart-popup">
+    <button class="close-cart-btn" onclick="closePopup()">&times;</button>
+    <h3>Order Cart</h3>
+    
+    <div class="token-display" style="margin-bottom: 10px; font-weight: bold; color: #333;">
+      Token No: <span id="popup-token">1</span>
+    </div>
+    
+    <div id="popup-items-list"></div>
+    
+    <div class="cart-total-display">
+      <span>Grand Total:</span>
+      <span>Rs <span id="popup-total">0</span></span>
+    </div>
+    
+    <!-- FIXED: Turned the button element into a completely native clickable link -->
+    <a id="order-submit-btn" href="#" class="whatsapp-link-btn" onclick="prepareWhatsAppLink(event)">
+        Place Order & Notify Owner
+    </a>
+  </div>
+
+
+
+</body>
+</html>
