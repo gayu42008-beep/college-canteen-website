@@ -1,11 +1,7 @@
 let basket = [];
 
-    // function addProduct(e, name, price, imageSrc) {
-      // if(e) e.preventDefault();
-      
-    function addProduct(event, name, price, imageSrc) {
-    // Paste these two lines right at the very top of your function:
-    if (event) event.preventDefault();
+    function addProduct(e, name, price, imageSrc) {
+      if(e) e.preventDefault();
       basket.push({ name: name, price: price, image: imageSrc });
       updatePopupView();
     }
@@ -36,7 +32,7 @@ let basket = [];
       document.getElementById('myCartPopup').style.display = "none";
     }
 
-    // FIXED: Instead of redirecting with Javascript, this changes the link path layout instantly
+   
     function prepareWhatsAppLink(e) {
         if (basket.length === 0) {
             e.preventDefault();
@@ -61,24 +57,19 @@ let basket = [];
                       "💵 *Grand Total:* Rs" + totalPrice + "\n\n" +
                       "Please confirm availability. Thanks!";
 
-        // FIXED CRITICAL URL STRUCTURE: Uses official short universal links
+        
         var targetUrl = "https://wa.me/" + ownerPhoneNumber + "?text=" + encodeURIComponent(message);
 
-        // 1. Change the actual link destination value inside the HTML element tag
+        
         var linkElement = document.getElementById('order-submit-btn');
         linkElement.href = targetUrl;
-        linkElement.target = "_blank"; // Tells the browser it's a completely user-initiated click tab
+        linkElement.target = "_blank"; 
 
-        // 2. Alert the client 
         alert("🎉 Success! Opening WhatsApp to send your order.");
 
-        // 3. Clear data structures down
+        
         basket = [];
         setTimeout(closePopup, 500); 
         
-        // Let the default HTML anchor click handle the tab transition organically
     }
-
-    
-    // ... rest of your existing popup code stays here ...
 
